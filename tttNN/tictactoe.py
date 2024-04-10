@@ -4,7 +4,7 @@ import numpy as np
 import random
 import math 
 
-class tiktak(object): 
+class tictac(object): 
     def __init__(self):
         self.layers = [9, 5, 5, 9]
         self.weights_layer2 = np.random.randn(9, 5)

@@ -1,6 +1,6 @@
 #Now, lets actually train a model using real data
 import pandas as pd
-import tiktaktoe 
+import tictactoe 
 
 df = pd.read_csv('Tic tac initial results.csv')
 df = df.dropna()
@@ -69,6 +69,6 @@ print(len(y_train))
 
     
 
-neural_net = tiktaktoe.tiktak()
+neural_net = tictactoe.tictac()
 
 neural_net.rundat(X_train, y_train, 1000)
