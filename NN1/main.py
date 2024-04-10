@@ -101,8 +101,8 @@ class November(object):
         test_results = [(np.argmax(self.feedforward(x)), y) for (x, y) in test_data]
         return sum(int(x == y) for (x, y) in test_results)
 
-network = November([3, 3, 2])
-training_data = list([(1, 1), (3, 0), (5, 3)])
+network = November([9, 5, 5, 9])
+training_data = list([1, 0, 0, 0, 0, 0, 0, 0, 0])
 
 November.SGD(network, training_data, 2, 1, 0.1, None)
 
